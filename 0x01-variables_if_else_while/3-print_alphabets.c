@@ -1,6 +1,10 @@
 #include <stdio.h>
-
-int main (void)
+/**
+ * main - main block
+ * Description: Use `putchar` to print lowercase and then uppercase alphabet.
+ * Return: 0
+ */
+int main(void)
 {
 	char letter;
 
