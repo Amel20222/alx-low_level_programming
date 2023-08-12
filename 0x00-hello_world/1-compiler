@@ -1,14 +1,2 @@
-if [ -z "$CFILE" ]; then
-  echo "CFILE variable is not set"
-  exit 1
-fi
-
-
-#get the file name without extension
- FILENAME=$(basename -- "$CFILE")
- FILENAME_NOEXT="${FILENAME%.*}"
- 
-#complie the C file to an object file
-gcc -c $CFILE -o $FILENAME_NOEXT.O
-
-echo "Compilation successful . Object file '$FILENAME_NOEXT.o' generated"
+#!/bin/bash
+gcc -c $CFILE

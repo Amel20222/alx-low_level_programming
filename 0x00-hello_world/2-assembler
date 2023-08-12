@@ -1,12 +1,2 @@
-if [ -z "$CFILE" ];then
-  echo " CFILE variable is not set"
-  exit 1 
-fi
-
-FILENAME=$(basename -- "$CFILE")
-FILENAME_NOEXT="${FILENAME%.*}"
-
-
-gcc -S $CFILE -o $FILENAME_NOEXT.s
-
-echo "Assembly code generated and saved in '$FILENAME_NOEXT.s'" 
+#!/bin/bash
+gcc -S $CFILE

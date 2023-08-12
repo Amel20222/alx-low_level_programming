@@ -1,6 +1,10 @@
 #include <stdio.h>
-
-int main (void)
+/**
+ * main - main block
+ * Description: Use `putchar` to print lowercase and then uppercase alphabet.
+ * Return: 0
+ */
+int main(void)
 {
 	char letter;
 
@@ -9,7 +13,6 @@ int main (void)
 
 	for (letter = 'A'; letter <= 'Z'; letter++)
 		putchar (letter);
-           
 	putchar ('\n');
 
 	return (0);
