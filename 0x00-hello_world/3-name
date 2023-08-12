@@ -1,0 +1,11 @@
+if [ -z "$CFILE" ];then 
+   echo "CFILE variable is not set"
+   exit 1
+fi
+
+FILENAME=$(basename -- "$CFIFLE")
+FILENAME_NOEXT="$FILENAME%.*"
+
+gcc $CFILE -o cisfun
+
+echo "Compilation successful . Excuteable 'cisfun' created"
